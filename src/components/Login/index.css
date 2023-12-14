@@ -1,0 +1,138 @@
+.login-bg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.form-container {
+  border-radius: 8px;
+  background-color: #009fb7;
+  box-shadow: 0px 8px 40px 0px rgba(7, 7, 7, 0.08);
+  padding: 48px;
+  width: 350px;
+  height: 450px;
+}
+
+.form-heading {
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 125% */
+  margin-top: 32px;
+  margin-bottom: 55px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.label-element {
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: 0.12px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.input-element {
+  border-radius: 2px;
+  background-color: var(--light-blue-gray-200, #e2e8f0);
+  outline: none;
+  border: none;
+  height: 28px;
+  padding-right: 6px;
+}
+
+.form-button {
+  background-color: #696773;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.login-mobile-view-container {
+  display: none;
+  height: 100vh;
+}
+
+.invalid-text {
+  color: var(--light-red-500, red);
+  font-family: DM Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 5px;
+}
+
+.text {
+  font-size: 0.8rem;
+  font-family: DM Sans;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.logout-msg {
+  color: #009fb7;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 576px) {
+  .login-bg-container {
+    display: none;
+  }
+
+  .login-mobile-view-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+    justify-content: flex-end;
+  }
+
+  .mobile-login-heading {
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 133.333% */
+  }
+
+  .login-mobile-form-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 27px;
+    padding: 24px;
+    background-color: #009fb7;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .input-container {
+    height: 64px;
+  }
+
+  .input-element {
+    height: 40px;
+  }
+
+  .form-button {
+    height: 40px;
+    padding: 0px;
+  }
+}
